@@ -1,4 +1,11 @@
 import { ProductCard } from "./ProductCard";
+import glassCutterImg from "@/assets/glass-cutter.jpg";
+import runningPliersImg from "@/assets/running-pliers.jpg";
+import foilerImg from "@/assets/foiler.jpg";
+import grinder3Img from "@/assets/grinder3.jpg";
+import quickFitBitImg from "@/assets/quick-fit-bit.jpg";
+import iPurgeXImg from "@/assets/i-purge-x.jpg";
+import proOxMonitorImg from "@/assets/pro-ox-monitor.jpg";
 
 const products = [
   {
@@ -11,6 +18,7 @@ const products = [
       "Machined stainless steel components",
       "Ergonomic grip design"
     ],
+    image: glassCutterImg,
     patents: true
   },
   {
@@ -23,6 +31,7 @@ const products = [
       "Rubberized top and bottom pads",
       "Professional CMF specification"
     ],
+    image: runningPliersImg,
     patents: true
   },
   {
@@ -35,6 +44,7 @@ const products = [
       "Integrated cutting blade and crimper",
       "EZ-View window for foil monitoring"
     ],
+    image: foilerImg,
     patents: true
   },
   {
@@ -47,6 +57,7 @@ const products = [
       "Aqua Flow System (continuous water flow)",
       "Removable water tray with lift-out design"
     ],
+    image: grinder3Img,
     patents: true
   },
   {
@@ -59,6 +70,7 @@ const products = [
       "Built-in accessory drawer",
       "Waterproof illuminated switch"
     ],
+    image: grinder3Img,
     patents: true
   },
   {
@@ -71,6 +83,7 @@ const products = [
       "100% utilization (adjustable and reversible)",
       "Available in multiple grit varieties"
     ],
+    image: quickFitBitImg,
     patents: true
   },
   {
@@ -83,6 +96,7 @@ const products = [
       "Tri-flow inner tubing system",
       "Patent-pending inert gas diffuser"
     ],
+    image: iPurgeXImg,
     patents: true
   },
   {
@@ -95,6 +109,7 @@ const products = [
       "Removable cleanable puck filters",
       "Glove-compatible button design"
     ],
+    image: proOxMonitorImg,
     patents: false
   }
 ];
