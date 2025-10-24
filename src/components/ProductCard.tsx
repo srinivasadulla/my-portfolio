@@ -9,6 +9,7 @@ interface ProductCardProps {
   features: string[];
   image?: string;
   patents?: boolean;
+  onClick?: () => void;
 }
 
 export const ProductCard = ({ 
@@ -17,10 +18,14 @@ export const ProductCard = ({
   description, 
   features,
   image,
-  patents = false
+  patents = false,
+  onClick
 }: ProductCardProps) => {
   return (
-    <Card className="group overflow-hidden hover:shadow-[var(--shadow-elevated)] transition-all duration-300 border-border">
+    <Card 
+      className="group overflow-hidden hover:shadow-[var(--shadow-elevated)] transition-all duration-300 border-border cursor-pointer"
+      onClick={onClick}
+    >
       <div className="relative h-64 bg-muted overflow-hidden">
         {image ? (
           <img 
