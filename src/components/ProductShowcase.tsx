@@ -8,12 +8,11 @@ import grinder2Img from "@/assets/grinder2.jpg";
 import grinder3Img from "@/assets/grinder3.jpg";
 import quickFitBitImg from "@/assets/quick-fit-bit.jpg";
 import iPurgeXImg from "@/assets/i-purge-x.jpg";
-import pom100bImg from "@/assets/pom-100b.jpg";
-import pom5bImg from "@/assets/pom-5b.jpg";
+import pomBothVariants from "@/assets/pom-both-variants.png";
+import pom100bDetail1 from "@/assets/pom-100b-detail-1.jpg";
+import pom100bDetail2 from "@/assets/pom-100b-detail-2.jpg";
+import pom100bDetail3 from "@/assets/pom-100b-detail-3.jpg";
 import proOxMonitorImg from "@/assets/pro-ox-monitor.jpg";
-import pomDetail1 from "@/assets/pom-detail-1.jpg";
-import pomDetail2 from "@/assets/pom-detail-2.jpg";
-import pomDetail3 from "@/assets/pom-detail-3.jpg";
 import proOxDetail1 from "@/assets/pro-ox-detail-1.jpg";
 import proOxDetail2 from "@/assets/pro-ox-detail-2.jpg";
 import proOxDetail3 from "@/assets/pro-ox-detail-3.jpg";
@@ -161,48 +160,33 @@ const products: Product[] = [
     patents: true
   },
   {
-    title: "POM 100B",
-    category: "Welding Equipment",
-    description: "Professional oxygen monitor with 100 PPM precision for industrial welding applications.",
-    fullDescription: "The POM 100B is a professional-grade oxygen monitoring device engineered for precision welding applications. With IP65 waterproof construction and a large color display, it's designed to perform in the most extreme industrial environments. Features removable cleanable puck filters and glove-compatible controls for maximum usability in demanding conditions.",
+    title: "POM Series - Precise Oxygen Monitors",
+    category: "Oxygen Monitoring",
+    description: "Professional oxygen monitors available in two variants: POM-100B (100PPM) for general welding and POM-5B (5PPM) for ultra-precision applications.",
+    fullDescription: "The POM Series offers two precision oxygen monitors designed for welding applications. The POM-100B monitors down to .01% (100PPM), ideal for general welding applications to reduce oxidation. The POM-5B provides ultra-low oxygen detection to 5PPM, critical for aerospace and medical device welding. Both feature extended battery life of 25-30 hours, smart Bluetooth connectivity with the POMConnect app for real-time monitoring and data logging, and expected sensor life exceeding 3 years. Features include a large 2.8\" LCD color display, dust and water resistant construction, and comprehensive kit with carrying case and accessories.",
     features: [
-      "100 PPM precision measurement",
-      "IP65 waterproof rating",
-      "Large color display screen",
-      "Removable cleanable puck filters",
-      "Glove-compatible button design"
+      "Two variants: POM-100B (100PPM) and POM-5B (5PPM)",
+      "Extended battery life: 25-30 hours",
+      "Smart Bluetooth with POMConnect app",
+      "Long sensor life > 3 years with 1-year warranty",
+      "2.8\" LCD color display",
+      "Multi-language support"
     ],
     specifications: [
-      "Measurement Range: 0-100 PPM",
-      "IP65 Waterproof Construction",
-      "Extreme Environment Operation",
-      "Upgradeable to 5 PPM version"
+      "POM-100B Range: 0.01% to 25% oxygen (100PPM minimum)",
+      "POM-5B Range: 5PPM to 25% oxygen (ultra-precision)",
+      "Battery life: 25-30 hours continuous operation",
+      "Sensor life: > 3 years expected lifespan",
+      "Display: 2.8\" LCD color screen with intuitive interface",
+      "Connectivity: Bluetooth-enabled with POMConnect mobile app",
+      "Languages: English, German, Spanish, Portuguese, Japanese",
+      "Construction: Dust and water resistant, impact-resistant polycarbonate",
+      "Warranty: One year on unit & sensor",
+      "Kit includes: Monitor with sensor, carrying case, extension tubing, probe, charger, USB cable"
     ],
-    image: pom100bImg,
-    images: [pom100bImg, pomDetail1, pomDetail2, pomDetail3],
-    patents: false
-  },
-  {
-    title: "POM 5B",
-    category: "Welding Equipment",
-    description: "Ultra-precision oxygen monitor with 5 PPM accuracy for critical welding operations.",
-    fullDescription: "The POM 5B delivers ultra-precision oxygen monitoring with 5 PPM accuracy for the most critical welding operations. Built on the same rugged IP65 waterproof platform as the 100B model, the POM 5B provides enhanced precision for applications requiring the tightest oxygen control. Perfect for aerospace, medical device, and other high-precision manufacturing environments.",
-    features: [
-      "5 PPM ultra-precision measurement",
-      "IP65 waterproof rating",
-      "Large color display screen",
-      "Removable cleanable puck filters",
-      "Glove-compatible button design"
-    ],
-    specifications: [
-      "Measurement Range: 0-5 PPM",
-      "IP65 Waterproof Construction",
-      "Extreme Environment Operation",
-      "Enhanced Sensor Technology"
-    ],
-    image: pom5bImg,
-    images: [pom5bImg, pomDetail1, pomDetail2, pomDetail3],
-    patents: false
+    image: pomBothVariants,
+    images: [pomBothVariants, pom100bDetail1, pom100bDetail2, pom100bDetail3],
+    patents: true
   },
   {
     title: "Pro-Ox Monitor",

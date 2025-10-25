@@ -26,12 +26,12 @@ export const ProductCard = ({
       className="group overflow-hidden hover:shadow-[var(--shadow-elevated)] transition-all duration-300 border-border cursor-pointer"
       onClick={onClick}
     >
-      <div className="relative h-64 bg-background overflow-hidden">
+      <div className="relative h-64 bg-background overflow-hidden border border-border">
         {image ? (
           <img 
             src={image} 
             alt={title}
-            className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-500"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-muted to-muted/50">

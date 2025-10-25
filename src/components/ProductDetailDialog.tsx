@@ -54,11 +54,11 @@ export const ProductDetailDialog = ({
               <CarouselContent>
                 {images.map((image, index) => (
                   <CarouselItem key={index}>
-                    <div className="relative aspect-square bg-background rounded-lg overflow-hidden border border-border">
+                    <div className="relative aspect-video bg-background rounded-lg overflow-hidden border border-border">
                       <img 
                         src={image} 
                         alt={`${title} - Image ${index + 1}`}
-                        className="w-full h-full object-contain p-4"
+                        className="w-full h-full object-contain"
                       />
                     </div>
                   </CarouselItem>
@@ -75,7 +75,7 @@ export const ProductDetailDialog = ({
             {/* Description */}
             <div className="space-y-3">
               <h3 className="text-xl font-semibold text-foreground">Overview</h3>
-              <p className="text-foreground/90 leading-relaxed">
+              <p className="text-foreground leading-relaxed">
                 {fullDescription || description}
               </p>
             </div>
@@ -87,7 +87,7 @@ export const ProductDetailDialog = ({
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-2">
                     <div className="h-1.5 w-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                    <p className="text-sm text-foreground/80">{feature}</p>
+                    <p className="text-sm text-foreground">{feature}</p>
                   </div>
                 ))}
               </div>
@@ -101,7 +101,7 @@ export const ProductDetailDialog = ({
                   {specifications.map((spec, index) => (
                     <div key={index} className="flex items-start gap-2">
                       <div className="h-1.5 w-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                      <p className="text-sm text-foreground/80">{spec}</p>
+                      <p className="text-sm text-foreground">{spec}</p>
                     </div>
                   ))}
                 </div>
