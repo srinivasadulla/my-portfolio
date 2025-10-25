@@ -26,12 +26,12 @@ export const ProductCard = ({
       className="group overflow-hidden hover:shadow-[var(--shadow-elevated)] transition-all duration-300 border-border cursor-pointer"
       onClick={onClick}
     >
-      <div className="relative h-64 bg-muted overflow-hidden">
+      <div className="relative h-64 bg-background overflow-hidden">
         {image ? (
           <img 
             src={image} 
             alt={title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-muted to-muted/50">
@@ -55,7 +55,7 @@ export const ProductCard = ({
           </h3>
         </div>
         
-        <p className="text-muted-foreground leading-relaxed">
+        <p className="text-foreground/80 leading-relaxed">
           {description}
         </p>
         
@@ -63,7 +63,7 @@ export const ProductCard = ({
           {features.map((feature, index) => (
             <div key={index} className="flex items-start gap-2">
               <div className="h-1.5 w-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-              <p className="text-sm text-muted-foreground">{feature}</p>
+              <p className="text-sm text-foreground/75">{feature}</p>
             </div>
           ))}
         </div>

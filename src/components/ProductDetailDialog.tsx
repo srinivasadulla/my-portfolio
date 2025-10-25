@@ -1,6 +1,7 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 interface ProductDetailDialogProps {
   title: string;
@@ -48,23 +49,33 @@ export const ProductDetailDialog = ({
         
         <ScrollArea className="max-h-[calc(90vh-120px)] pr-4">
           <div className="space-y-6">
-            {/* Image Gallery */}
-            <div className="grid grid-cols-2 gap-4">
-              {images.map((image, index) => (
-                <div key={index} className="relative aspect-square bg-muted rounded-lg overflow-hidden">
-                  <img 
-                    src={image} 
-                    alt={`${title} - Image ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
+            {/* Image Gallery Carousel */}
+            <Carousel className="w-full">
+              <CarouselContent>
+                {images.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative aspect-square bg-background rounded-lg overflow-hidden border border-border">
+                      <img 
+                        src={image} 
+                        alt={`${title} - Image ${index + 1}`}
+                        className="w-full h-full object-contain p-4"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              {images.length > 1 && (
+                <>
+                  <CarouselPrevious className="left-2" />
+                  <CarouselNext className="right-2" />
+                </>
+              )}
+            </Carousel>
 
             {/* Description */}
             <div className="space-y-3">
               <h3 className="text-xl font-semibold text-foreground">Overview</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-foreground/90 leading-relaxed">
                 {fullDescription || description}
               </p>
             </div>
@@ -76,7 +87,7 @@ export const ProductDetailDialog = ({
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-2">
                     <div className="h-1.5 w-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                    <p className="text-sm text-muted-foreground">{feature}</p>
+                    <p className="text-sm text-foreground/80">{feature}</p>
                   </div>
                 ))}
               </div>
@@ -90,7 +101,7 @@ export const ProductDetailDialog = ({
                   {specifications.map((spec, index) => (
                     <div key={index} className="flex items-start gap-2">
                       <div className="h-1.5 w-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                      <p className="text-sm text-muted-foreground">{spec}</p>
+                      <p className="text-sm text-foreground/80">{spec}</p>
                     </div>
                   ))}
                 </div>
