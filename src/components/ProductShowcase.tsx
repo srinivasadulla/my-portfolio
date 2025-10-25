@@ -2,12 +2,18 @@ import { useState } from "react";
 import { ProductCard } from "./ProductCard";
 import { ProductDetailDialog } from "./ProductDetailDialog";
 import glassCutterImg from "@/assets/glass-cutter.jpg";
+import glassCutterDetail1 from "@/assets/glass-cutter-detail-1.jpg";
 import runningPliersImg from "@/assets/running-pliers.jpg";
+import runningPliersDetail1 from "@/assets/running-pliers-detail-1.jpg";
 import foilerImg from "@/assets/foiler.jpg";
 import grinder2Img from "@/assets/grinder2.jpg";
 import grinder3Img from "@/assets/grinder3.jpg";
 import quickFitBitImg from "@/assets/quick-fit-bit.jpg";
-import iPurgeXImg from "@/assets/i-purge-x.jpg";
+import quickFitDetail1 from "@/assets/quick-fit-detail-1.jpg";
+import iPurgeXImg from "@/assets/i-purge-x-main.jpg";
+import iPurgeXDetail1 from "@/assets/i-purge-detail-1.jpg";
+import iPurgeXDetail2 from "@/assets/i-purge-x-detail-2.jpg";
+import iPurgeXDetail3 from "@/assets/i-purge-x-detail-3.jpg";
 import pomBothVariants from "@/assets/pom-both-variants.png";
 import pom100bDetail1 from "@/assets/pom-100b-detail-1.jpg";
 import pom100bDetail2 from "@/assets/pom-100b-detail-2.jpg";
@@ -24,6 +30,9 @@ import grinder3Detail2 from "@/assets/grinder3-detail-2.jpg";
 import foilerDetail1 from "@/assets/foiler-detail-1.jpg";
 import foilerDetail2 from "@/assets/foiler-detail-2.jpg";
 import foilerDetail3 from "@/assets/foiler-detail-3.jpg";
+import dustFilterImg from "@/assets/dust-filter.jpg";
+import dustFilterDetail1 from "@/assets/dust-filter-detail-1.jpg";
+import dustFilterDetail2 from "@/assets/dust-filter-detail-2.jpg";
 
 interface Product {
   title: string;
@@ -50,7 +59,7 @@ const products: Product[] = [
       "Ergonomic grip design"
     ],
     image: glassCutterImg,
-    images: [glassCutterImg, "@/assets/glass-cutter-detail-1.jpg"],
+    images: [glassCutterImg, glassCutterDetail1],
     patents: true
   },
   {
@@ -65,7 +74,7 @@ const products: Product[] = [
       "Professional CMF specification"
     ],
     image: runningPliersImg,
-    images: [runningPliersImg, "@/assets/running-pliers-detail-1.jpg"],
+    images: [runningPliersImg, runningPliersDetail1],
     patents: true
   },
   {
@@ -141,7 +150,7 @@ const products: Product[] = [
       "Available in multiple grit varieties"
     ],
     image: quickFitBitImg,
-    images: [quickFitBitImg, "@/assets/quick-fit-detail-1.jpg"],
+    images: [quickFitBitImg, quickFitDetail1],
     patents: true
   },
   {
@@ -156,8 +165,33 @@ const products: Product[] = [
       "Patent-pending inert gas diffuser"
     ],
     image: iPurgeXImg,
-    images: [iPurgeXImg, "@/assets/i-purge-detail-1.jpg"],
+    images: [iPurgeXImg, iPurgeXDetail1, iPurgeXDetail2, iPurgeXDetail3],
     patents: true
+  },
+  {
+    title: "External Dust Filter",
+    category: "Welding Accessories",
+    description: "Essential accessory to capture dust and debris for Pro-Ox and POM oxygen monitors.",
+    fullDescription: "The External Dust Filter is designed to capture debris and other particulate matter that can obstruct the flow of atmosphere being measured by the oxygen monitor. Welding environments are often not pristine even if equipped with top notch roof ventilation and exhaust systems. Outdoor welding environments present extreme conditions including strong air movement with debris such as sand, dust and dirt. The filter prevents intake hose blockage and ensures long-term maintenance-free operation. The 30-40 micron frits are cleanable and feature long lasting bronze construction.",
+    features: [
+      "Enhances operation in extreme dust environments",
+      "Prevents intake hose blockage",
+      "Corrosion resistant bronze construction",
+      "Filters particles 30-40 microns or larger",
+      "Quick Connect fitting for easy installation",
+      "Cleanable and reusable filter"
+    ],
+    specifications: [
+      "Compatible with Pro-Ox-100, POM-100B & POM-5B",
+      "Dimensions: 2.9 x 1\" (74 x 25mm)",
+      "Weight: 1 ounce (30 gm)",
+      "Material: Sintered bronze filter",
+      "Filter size: 1/2 x 1\" (12.5 x 25mm)",
+      "Easy maintenance and cleaning"
+    ],
+    image: dustFilterImg,
+    images: [dustFilterImg, dustFilterDetail1, dustFilterDetail2],
+    patents: false
   },
   {
     title: "POM Series - Precise Oxygen Monitors",
