@@ -74,6 +74,106 @@ export const ProcessTimeline = () => {
               ))}
             </div>
           </div>
+
+          {/* Detailed Development Flowchart */}
+          <div className="mt-16 space-y-6">
+            <div className="text-center space-y-2">
+              <h3 className="text-2xl font-bold text-foreground">
+                Detailed Development Process
+              </h3>
+              <p className="text-muted-foreground">
+                Comprehensive workflow from concept to market
+              </p>
+            </div>
+            
+            <div className="bg-card p-8 rounded-lg border border-border">
+              <div className="space-y-4">
+                {/* Phase 1: Concept & Design */}
+                <div className="flex flex-col md:flex-row gap-3">
+                  <div className="flex-1 bg-primary/10 border-2 border-primary rounded-lg p-4">
+                    <h4 className="font-bold text-foreground mb-2">1. Concept Generation</h4>
+                    <p className="text-sm text-muted-foreground">Initial ideation and requirements</p>
+                  </div>
+                  <div className="flex items-center justify-center text-primary">→</div>
+                  <div className="flex-1 bg-primary/10 border-2 border-primary rounded-lg p-4">
+                    <h4 className="font-bold text-foreground mb-2">2. Material Selection</h4>
+                    <p className="text-sm text-muted-foreground">Engineering material choices</p>
+                  </div>
+                </div>
+
+                {/* Phase 2: Testing */}
+                <div className="bg-accent/10 border-2 border-accent rounded-lg p-6">
+                  <h4 className="font-bold text-foreground mb-4">3. Comprehensive Testing Phase</h4>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
+                    <div className="bg-card border border-border rounded p-3">
+                      <p className="text-sm font-semibold text-foreground">HALT Testing</p>
+                      <p className="text-xs text-muted-foreground mt-1">Highly Accelerated Life</p>
+                    </div>
+                    <div className="bg-card border border-border rounded p-3">
+                      <p className="text-sm font-semibold text-foreground">ALT Testing</p>
+                      <p className="text-xs text-muted-foreground mt-1">Accelerated Life</p>
+                    </div>
+                    <div className="bg-card border border-border rounded p-3">
+                      <p className="text-sm font-semibold text-foreground">HASS Testing</p>
+                      <p className="text-xs text-muted-foreground mt-1">Screen Testing</p>
+                    </div>
+                    <div className="bg-card border border-border rounded p-3">
+                      <p className="text-sm font-semibold text-foreground">Structural</p>
+                      <p className="text-xs text-muted-foreground mt-1">Mechanical Integrity</p>
+                    </div>
+                    <div className="bg-card border border-border rounded p-3">
+                      <p className="text-sm font-semibold text-foreground">Thermal</p>
+                      <p className="text-xs text-muted-foreground mt-1">Temperature Extremes</p>
+                    </div>
+                    <div className="bg-card border border-border rounded p-3">
+                      <p className="text-sm font-semibold text-foreground">Vibration</p>
+                      <p className="text-xs text-muted-foreground mt-1">Environmental Stress</p>
+                    </div>
+                    <div className="bg-card border border-border rounded p-3">
+                      <p className="text-sm font-semibold text-foreground">IP Rating</p>
+                      <p className="text-xs text-muted-foreground mt-1">Ingress Protection</p>
+                    </div>
+                    <div className="bg-card border border-border rounded p-3">
+                      <p className="text-sm font-semibold text-foreground">External Labs</p>
+                      <p className="text-xs text-muted-foreground mt-1">Third-party Validation</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Phase 3: Manufacturing */}
+                <div className="flex flex-col md:flex-row gap-3">
+                  <div className="flex-1 bg-green-500/10 border-2 border-green-500 rounded-lg p-4">
+                    <h4 className="font-bold text-foreground mb-2">4. Manufacturer Partnership</h4>
+                    <p className="text-sm text-muted-foreground">Production setup & prototypes</p>
+                  </div>
+                  <div className="flex items-center justify-center text-green-500">→</div>
+                  <div className="flex-1 bg-green-500/10 border-2 border-green-500 rounded-lg p-4">
+                    <h4 className="font-bold text-foreground mb-2">5. Production Ramp-Up</h4>
+                    <p className="text-sm text-muted-foreground">Scaling manufacturing capacity</p>
+                  </div>
+                </div>
+
+                {/* Phase 4: Launch */}
+                <div className="bg-orange-500/10 border-2 border-orange-500 rounded-lg p-6">
+                  <h4 className="font-bold text-foreground mb-4">6. Market Launch</h4>
+                  <div className="grid md:grid-cols-3 gap-3">
+                    <div className="bg-card border border-border rounded p-3">
+                      <p className="text-sm font-semibold text-foreground">Logistics Planning</p>
+                      <p className="text-xs text-muted-foreground mt-1">Distribution & supply chain</p>
+                    </div>
+                    <div className="bg-card border border-border rounded p-3">
+                      <p className="text-sm font-semibold text-foreground">Marketing Campaign</p>
+                      <p className="text-xs text-muted-foreground mt-1">Product positioning</p>
+                    </div>
+                    <div className="bg-card border border-border rounded p-3">
+                      <p className="text-sm font-semibold text-foreground">Mass Production</p>
+                      <p className="text-xs text-muted-foreground mt-1">Full-scale manufacturing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
