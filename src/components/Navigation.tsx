@@ -14,18 +14,28 @@ export const Navigation = () => {
           >
             Srinivas Reddy Adulla
           </button>
-          <div className="flex gap-4">
+          <div className="flex gap-2">
             <Button 
               variant="ghost" 
               onClick={() => navigate("/")}
+              className="hover:text-accent hover:bg-accent/10"
             >
               Portfolio
             </Button>
             <Button 
               variant="ghost" 
               onClick={() => navigate("/about")}
+              className="hover:text-accent hover:bg-accent/10"
             >
               About
+            </Button>
+            <Button 
+              variant="ghost" 
+              className="hover:text-accent hover:bg-accent/10 opacity-50 cursor-not-allowed"
+              disabled
+            >
+              ML Projects
+              <span className="ml-2 text-xs bg-accent/20 text-accent px-2 py-0.5 rounded-full">Soon</span>
             </Button>
           </div>
         </div>
