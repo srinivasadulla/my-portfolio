@@ -14,7 +14,7 @@ const steps = [
   {
     icon: Cog,
     title: "Detailed Engineering",
-    description: "Material selection and mechanical design"
+    description: "Part design, system design, material selection, and mechanical design for all products"
   },
   {
     icon: TestTube,
@@ -92,18 +92,23 @@ export const ProcessTimeline = () => {
                 <div className="flex flex-col md:flex-row gap-3">
                   <div className="flex-1 bg-primary/10 border-2 border-primary rounded-lg p-4">
                     <h4 className="font-bold text-foreground mb-2">1. Concept Generation</h4>
-                    <p className="text-sm text-muted-foreground">Initial ideation and requirements</p>
+                    <p className="text-sm text-muted-foreground">Initial ideation and requirements definition</p>
                   </div>
                   <div className="flex items-center justify-center text-primary">→</div>
                   <div className="flex-1 bg-primary/10 border-2 border-primary rounded-lg p-4">
-                    <h4 className="font-bold text-foreground mb-2">2. Material Selection</h4>
-                    <p className="text-sm text-muted-foreground">Engineering material choices</p>
+                    <h4 className="font-bold text-foreground mb-2">2. Part & System Design</h4>
+                    <p className="text-sm text-muted-foreground">Detailed part design, material selection, and system architecture</p>
+                  </div>
+                  <div className="flex items-center justify-center text-primary">→</div>
+                  <div className="flex-1 bg-primary/10 border-2 border-primary rounded-lg p-4">
+                    <h4 className="font-bold text-foreground mb-2">3. DFM & DFA</h4>
+                    <p className="text-sm text-muted-foreground">Design for Manufacturing and Assembly optimization with suppliers</p>
                   </div>
                 </div>
 
                 {/* Phase 2: Testing */}
                 <div className="bg-accent/10 border-2 border-accent rounded-lg p-6">
-                  <h4 className="font-bold text-foreground mb-4">3. Reliability Testing & Validation</h4>
+                  <h4 className="font-bold text-foreground mb-4">4. Reliability Testing & Validation</h4>
                   
                   {/* Testing Methodologies */}
                   <div className="mb-4">
@@ -159,19 +164,19 @@ export const ProcessTimeline = () => {
                 {/* Phase 3: Manufacturing */}
                 <div className="flex flex-col md:flex-row gap-3">
                   <div className="flex-1 bg-green-500/10 border-2 border-green-500 rounded-lg p-4">
-                    <h4 className="font-bold text-foreground mb-2">4. Manufacturer Partnership</h4>
-                    <p className="text-sm text-muted-foreground">Production setup & prototypes</p>
+                    <h4 className="font-bold text-foreground mb-2">5. Manufacturer Partnership</h4>
+                    <p className="text-sm text-muted-foreground">Tooling engineering collaboration and prototype development</p>
                   </div>
                   <div className="flex items-center justify-center text-green-500">→</div>
                   <div className="flex-1 bg-green-500/10 border-2 border-green-500 rounded-lg p-4">
-                    <h4 className="font-bold text-foreground mb-2">5. Production Ramp-Up</h4>
-                    <p className="text-sm text-muted-foreground">Scaling manufacturing capacity</p>
+                    <h4 className="font-bold text-foreground mb-2">6. Production Ramp-Up</h4>
+                    <p className="text-sm text-muted-foreground">Scaling manufacturing capacity and quality control</p>
                   </div>
                 </div>
 
                 {/* Phase 4: Launch */}
                 <div className="bg-orange-500/10 border-2 border-orange-500 rounded-lg p-6">
-                  <h4 className="font-bold text-foreground mb-4">6. Market Launch</h4>
+                  <h4 className="font-bold text-foreground mb-4">7. Market Launch</h4>
                   <div className="grid md:grid-cols-3 gap-3">
                     <div className="bg-card border border-border rounded p-3">
                       <p className="text-sm font-semibold text-foreground">Logistics Planning</p>
@@ -186,6 +191,59 @@ export const ProcessTimeline = () => {
                       <p className="text-xs text-muted-foreground mt-1">Full-scale manufacturing</p>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Cross-Functional Leadership */}
+          <div className="mt-16 space-y-6">
+            <div className="text-center space-y-2">
+              <h3 className="text-2xl font-bold text-foreground">
+                Cross-Functional Leadership
+              </h3>
+              <p className="text-muted-foreground">
+                Hands-on involvement in every aspect of product development across all teams
+              </p>
+            </div>
+            
+            <div className="bg-card p-8 rounded-lg border border-border">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+                  <h4 className="font-bold text-foreground mb-2">Industrial Design Team</h4>
+                  <p className="text-sm text-muted-foreground">CMF specifications, aesthetics, and user experience refinement</p>
+                </div>
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+                  <h4 className="font-bold text-foreground mb-2">Hardware Engineering</h4>
+                  <p className="text-sm text-muted-foreground">Circuit design, component selection, and system integration</p>
+                </div>
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+                  <h4 className="font-bold text-foreground mb-2">Tooling Engineering</h4>
+                  <p className="text-sm text-muted-foreground">Mold design, manufacturing processes via suppliers</p>
+                </div>
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+                  <h4 className="font-bold text-foreground mb-2">Manufacturing Partners</h4>
+                  <p className="text-sm text-muted-foreground">DFM/DFA optimization, supplier communication, quality systems</p>
+                </div>
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+                  <h4 className="font-bold text-foreground mb-2">Logistics Team</h4>
+                  <p className="text-sm text-muted-foreground">Supply chain planning, packaging, and distribution strategy</p>
+                </div>
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+                  <h4 className="font-bold text-foreground mb-2">Marketing Team</h4>
+                  <p className="text-sm text-muted-foreground">Product positioning, technical documentation, launch campaigns</p>
+                </div>
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+                  <h4 className="font-bold text-foreground mb-2">Accounting & Finance</h4>
+                  <p className="text-sm text-muted-foreground">Cost analysis, budgeting, and financial planning</p>
+                </div>
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+                  <h4 className="font-bold text-foreground mb-2">External Testing Labs</h4>
+                  <p className="text-sm text-muted-foreground">Third-party validation, certification, compliance testing</p>
+                </div>
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+                  <h4 className="font-bold text-foreground mb-2">Quality Assurance</h4>
+                  <p className="text-sm text-muted-foreground">Testing protocols, inspection criteria, continuous improvement</p>
                 </div>
               </div>
             </div>
