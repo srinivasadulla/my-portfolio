@@ -15,9 +15,12 @@ import iPurgeXDetail1 from "@/assets/i-purge-detail-1.jpg";
 import iPurgeXDetail2 from "@/assets/i-purge-x-detail-2.jpg";
 import iPurgeXDetail3 from "@/assets/i-purge-x-detail-3.jpg";
 import pomBothVariants from "@/assets/pom-both-variants.png";
-import pom100bDetail1 from "@/assets/pom-100b-detail-1.jpg";
-import pom100bDetail2 from "@/assets/pom-100b-detail-2.jpg";
-import pom100bDetail3 from "@/assets/pom-100b-detail-3.jpg";
+import pom5bDustFilter from "@/assets/pom-5b-dust-filter.png";
+import pom5bMobileChart from "@/assets/pom-5b-mobile-chart.png";
+import pom100bDevice from "@/assets/pom-100b-device.png";
+import pom100bDustFilter from "@/assets/pom-100b-dust-filter.png";
+import pom100bMobileChart from "@/assets/pom-100b-mobile-chart.png";
+import pom100bMobileHome from "@/assets/pom-100b-mobile-home.png";
 import proOxMonitorImg from "@/assets/pro-ox-monitor.jpg";
 import proOxDetail1 from "@/assets/pro-ox-detail-1.jpg";
 import proOxDetail2 from "@/assets/pro-ox-detail-2.jpg";
@@ -219,7 +222,7 @@ const products: Product[] = [
       "Kit includes: Monitor with sensor, carrying case, extension tubing, probe, charger, USB cable"
     ],
     image: pomBothVariants,
-    images: [pomBothVariants, pom100bDetail1, pom100bDetail2, pom100bDetail3],
+    images: [pomBothVariants, pom100bDevice, pom100bDustFilter, pom100bMobileHome, pom100bMobileChart, pom5bDustFilter, pom5bMobileChart],
     patents: true
   },
   {
