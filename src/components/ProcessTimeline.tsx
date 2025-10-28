@@ -103,39 +103,55 @@ export const ProcessTimeline = () => {
 
                 {/* Phase 2: Testing */}
                 <div className="bg-accent/10 border-2 border-accent rounded-lg p-6">
-                  <h4 className="font-bold text-foreground mb-4">3. Comprehensive Testing Phase</h4>
-                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
-                    <div className="bg-card border border-border rounded p-3">
-                      <p className="text-sm font-semibold text-foreground">HALT Testing</p>
-                      <p className="text-xs text-muted-foreground mt-1">Highly Accelerated Life</p>
+                  <h4 className="font-bold text-foreground mb-4">3. Reliability Testing & Validation</h4>
+                  
+                  {/* Testing Methodologies */}
+                  <div className="mb-4">
+                    <p className="text-sm font-semibold text-foreground mb-3">Testing Methodologies:</p>
+                    <div className="grid md:grid-cols-3 gap-3">
+                      <div className="bg-card border border-border rounded p-3">
+                        <p className="text-sm font-semibold text-foreground">HALT</p>
+                        <p className="text-xs text-muted-foreground mt-1">Highly Accelerated Life Testing</p>
+                      </div>
+                      <div className="bg-card border border-border rounded p-3">
+                        <p className="text-sm font-semibold text-foreground">ALT</p>
+                        <p className="text-xs text-muted-foreground mt-1">Accelerated Life Testing</p>
+                      </div>
+                      <div className="bg-card border border-border rounded p-3">
+                        <p className="text-sm font-semibold text-foreground">HASS</p>
+                        <p className="text-xs text-muted-foreground mt-1">Highly Accelerated Stress Screening</p>
+                      </div>
                     </div>
-                    <div className="bg-card border border-border rounded p-3">
-                      <p className="text-sm font-semibold text-foreground">ALT Testing</p>
-                      <p className="text-xs text-muted-foreground mt-1">Accelerated Life</p>
-                    </div>
-                    <div className="bg-card border border-border rounded p-3">
-                      <p className="text-sm font-semibold text-foreground">HASS Testing</p>
-                      <p className="text-xs text-muted-foreground mt-1">Screen Testing</p>
-                    </div>
-                    <div className="bg-card border border-border rounded p-3">
-                      <p className="text-sm font-semibold text-foreground">Structural</p>
-                      <p className="text-xs text-muted-foreground mt-1">Mechanical Integrity</p>
-                    </div>
-                    <div className="bg-card border border-border rounded p-3">
-                      <p className="text-sm font-semibold text-foreground">Thermal</p>
-                      <p className="text-xs text-muted-foreground mt-1">Temperature Extremes</p>
-                    </div>
-                    <div className="bg-card border border-border rounded p-3">
-                      <p className="text-sm font-semibold text-foreground">Vibration</p>
-                      <p className="text-xs text-muted-foreground mt-1">Environmental Stress</p>
-                    </div>
-                    <div className="bg-card border border-border rounded p-3">
-                      <p className="text-sm font-semibold text-foreground">IP Rating</p>
-                      <p className="text-xs text-muted-foreground mt-1">Ingress Protection</p>
-                    </div>
-                    <div className="bg-card border border-border rounded p-3">
-                      <p className="text-sm font-semibold text-foreground">External Labs</p>
-                      <p className="text-xs text-muted-foreground mt-1">Third-party Validation</p>
+                  </div>
+
+                  {/* Test Types */}
+                  <div>
+                    <p className="text-sm font-semibold text-foreground mb-3">Test Parameters & Validation:</p>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
+                      <div className="bg-card border border-border rounded p-3">
+                        <p className="text-sm font-semibold text-foreground">Thermal Cycling</p>
+                        <p className="text-xs text-muted-foreground mt-1">Temperature extremes & transitions</p>
+                      </div>
+                      <div className="bg-card border border-border rounded p-3">
+                        <p className="text-sm font-semibold text-foreground">Vibration Testing</p>
+                        <p className="text-xs text-muted-foreground mt-1">Environmental stress simulation</p>
+                      </div>
+                      <div className="bg-card border border-border rounded p-3">
+                        <p className="text-sm font-semibold text-foreground">Structural Analysis</p>
+                        <p className="text-xs text-muted-foreground mt-1">Mechanical integrity verification</p>
+                      </div>
+                      <div className="bg-card border border-border rounded p-3">
+                        <p className="text-sm font-semibold text-foreground">IP Rating</p>
+                        <p className="text-xs text-muted-foreground mt-1">Ingress protection certification</p>
+                      </div>
+                      <div className="bg-card border border-border rounded p-3">
+                        <p className="text-sm font-semibold text-foreground">External Labs</p>
+                        <p className="text-xs text-muted-foreground mt-1">Third-party validation</p>
+                      </div>
+                      <div className="bg-card border border-border rounded p-3">
+                        <p className="text-sm font-semibold text-foreground">Safety Standards</p>
+                        <p className="text-xs text-muted-foreground mt-1">Regulatory compliance testing</p>
+                      </div>
                     </div>
                   </div>
                 </div>
