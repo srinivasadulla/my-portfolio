@@ -5,7 +5,14 @@ import glassCutterImg from "@/assets/glass-cutter.jpg";
 import glassCutterDetail1 from "@/assets/glass-cutter-detail-1.jpg";
 import runningPliersImg from "@/assets/running-pliers.jpg";
 import runningPliersDetail1 from "@/assets/running-pliers-detail-1.jpg";
-import foilerImg from "@/assets/foiler.jpg";
+import foiler1 from "@/assets/foiler-1.jpg";
+import foiler2 from "@/assets/foiler-2.jpg";
+import foiler3 from "@/assets/foiler-3.png";
+import foiler4 from "@/assets/foiler-4.jpg";
+import benchClamp1 from "@/assets/bench-clamp-1.jpg";
+import benchClamp2 from "@/assets/bench-clamp-2.jpg";
+import benchClamp3 from "@/assets/bench-clamp-3.jpg";
+import benchClamp4 from "@/assets/bench-clamp-4.jpg";
 import grinder2Img from "@/assets/grinder2.jpg";
 import grinder3Img from "@/assets/grinder3.jpg";
 import quickFitBitImg from "@/assets/quick-fit-bit.jpg";
@@ -30,9 +37,6 @@ import grinder2Detail2 from "@/assets/grinder2-detail-2.jpg";
 import grinder2Detail3 from "@/assets/grinder2-detail-3.jpg";
 import grinder3Detail1 from "@/assets/grinder3-detail-1.jpg";
 import grinder3Detail2 from "@/assets/grinder3-detail-2.jpg";
-import foilerDetail1 from "@/assets/foiler-detail-1.jpg";
-import foilerDetail2 from "@/assets/foiler-detail-2.jpg";
-import foilerDetail3 from "@/assets/foiler-detail-3.jpg";
 import dustFilterImg from "@/assets/dust-filter.jpg";
 import dustFilterDetail1 from "@/assets/dust-filter-detail-1.jpg";
 import dustFilterDetail2 from "@/assets/dust-filter-detail-2.jpg";
@@ -51,49 +55,37 @@ interface Product {
 
 const products: Product[] = [
   {
-    title: "Glass Cutter GP",
-    category: "Glass Working Tools",
-    description: "Premium glass cutting tool featuring LED illumination, USB-C charging, and ergonomic craft-inspired design.",
-    fullDescription: "Premium glass cutting tool featuring LED illumination, USB-C charging, and ergonomic craft-inspired design. Multiple concept iterations focusing on user experience and functionality. Designed for professional glass artists and hobbyists who demand precision and comfort.",
-    features: [
-      "LED light system with capacitive touch controls",
-      "Rechargeable via USB-C port",
-      "Machined stainless steel components",
-      "Ergonomic grip design"
-    ],
-    image: glassCutterImg,
-    images: [glassCutterImg, glassCutterDetail1],
-    patents: true
-  },
-  {
-    title: "Running Pliers",
-    category: "Glass Working Tools",
-    description: "Industrial design for precision glass running pliers with adjustable alignment dial and rubberized pads.",
-    fullDescription: "Industrial design for precision glass running pliers with adjustable alignment dial and rubberized pads. Features powder-coated aluminum construction with laser-etched graphics. Engineered for consistent, controlled breaks in stained glass work.",
-    features: [
-      "Adjustable alignment dial for precision",
-      "Powder-coated aluminum levers",
-      "Rubberized top and bottom pads",
-      "Professional CMF specification"
-    ],
-    image: runningPliersImg,
-    images: [runningPliersImg, runningPliersDetail1],
-    patents: true
-  },
-  {
     title: "The Foiler",
     category: "Glass Working Tools",
     description: "Revolutionary handheld foiling tool that simplifies copper foil application for stained glass.",
-    fullDescription: "Revolutionary handheld foiling tool that simplifies copper foil application for stained glass. Features interchangeable tips, built-in blade, and integrated crimper/burnisher. Designed to make foiling faster, easier, and more consistent for artists of all skill levels.",
+    fullDescription: "Revolutionary handheld foiling tool that simplifies copper foil application for stained glass. Features interchangeable tips, built-in blade, and integrated crimper/burnisher. Designed to make foiling faster, easier, and more consistent for artists of all skill levels. Available in three vibrant colors to match your workshop style.",
     features: [
       "Three interchangeable tip sizes (3/16\", 7/32\", 1/4\")",
       "Ambidextrous ergonomic design",
       "Integrated cutting blade and crimper",
-      "EZ-View window for foil monitoring"
+      "EZ-View window for foil monitoring",
+      "Available in blue, orange, and green color variants"
     ],
-    image: foilerImg,
-    images: [foilerImg, foilerDetail1, foilerDetail2, foilerDetail3],
+    image: foiler1,
+    images: [foiler1, foiler2, foiler3, foiler4],
     patents: true
+  },
+  {
+    title: "Foiler Bench Clamp",
+    category: "Glass Working Accessories",
+    description: "Essential bench-mounting accessory for The Foiler, providing stable hands-free operation.",
+    fullDescription: "The Foiler Bench Clamp is the perfect companion to The Foiler, allowing you to mount your foiler securely to any workbench or table edge. This innovative clamp system provides stable, hands-free storage and easy access when you need it. The heavy-duty construction ensures your foiler stays in place while the adjustable clamp fits tables up to 2 inches thick.",
+    features: [
+      "Secure bench mounting system",
+      "Fits table edges up to 2\" thick",
+      "Quick-release mechanism for easy removal",
+      "Durable powder-coated construction",
+      "Protects foiler when not in use",
+      "Compact footprint saves workspace"
+    ],
+    image: benchClamp1,
+    images: [benchClamp1, benchClamp2, benchClamp3, benchClamp4],
+    patents: false
   },
   {
     title: "The Grinder 2",
@@ -254,15 +246,19 @@ export const ProductShowcase = () => {
 
   return (
     <>
-      <section id="projects" className="py-24 bg-background">
+      <section id="projects" className="py-24 bg-gradient-to-b from-background via-muted/20 to-background">
         <div className="container px-6">
           <div className="max-w-7xl mx-auto space-y-12">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              <div className="inline-block px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <span className="text-sm font-semibold text-accent">Featured Work</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">
                 Product Portfolio
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                A selection of innovative products developed from initial concept through mass production
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                A selection of innovative products developed from initial concept through mass production, 
+                showcasing end-to-end mechanical engineering and project management expertise
               </p>
             </div>
             

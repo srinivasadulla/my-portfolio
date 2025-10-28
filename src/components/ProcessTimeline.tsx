@@ -35,96 +35,82 @@ const steps = [
 
 export const ProcessTimeline = () => {
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="py-24 bg-gradient-to-br from-muted/20 via-background to-muted/10">
       <div className="container px-6">
-        <div className="max-w-4xl mx-auto space-y-12">
+        <div className="max-w-6xl mx-auto space-y-16">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-4">
+              <span className="text-sm font-semibold text-primary">Development Lifecycle</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               Complete Product Development Lifecycle
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Managing every phase from initial concept through mass production
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Comprehensive end-to-end management across all phases—from concept generation through mass production—with hands-on involvement in part design, system design, material selection, and cross-functional team leadership
             </p>
-          </div>
-          
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border hidden md:block" />
-            
-            <div className="space-y-8">
-              {steps.map((step, index) => (
-                <div key={index} className="relative flex gap-6 md:gap-8 items-start">
-                  {/* Icon */}
-                  <div className="relative z-10 flex-shrink-0">
-                    <div className="h-16 w-16 rounded-full bg-primary flex items-center justify-center">
-                      <step.icon className="h-8 w-8 text-primary-foreground" />
-                    </div>
-                  </div>
-                  
-                  {/* Content */}
-                  <div className="flex-1 pt-3 space-y-2">
-                    <h3 className="text-xl font-bold text-foreground">
-                      {step.title}
-                    </h3>
-                    <p className="text-muted-foreground">
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Detailed Development Flowchart */}
-          <div className="mt-16 space-y-6">
-            <div className="text-center space-y-2">
-              <h3 className="text-2xl font-bold text-foreground">
-                Detailed Development Process
-              </h3>
-              <p className="text-muted-foreground">
-                Comprehensive workflow from concept to market
-              </p>
-            </div>
-            
-            <div className="bg-card p-8 rounded-lg border border-border">
-              <div className="space-y-4">
+          <div className="space-y-6">            
+            <div className="bg-card/50 backdrop-blur-sm p-8 rounded-2xl border-2 border-border/50 shadow-[var(--shadow-card)]">
+              <div className="space-y-6">
                 {/* Phase 1: Concept & Design */}
-                <div className="flex flex-col md:flex-row gap-3">
-                  <div className="flex-1 bg-primary/10 border-2 border-primary rounded-lg p-4">
-                    <h4 className="font-bold text-foreground mb-2">1. Concept Generation</h4>
-                    <p className="text-sm text-muted-foreground">Initial ideation and requirements definition</p>
+                <div className="flex flex-col md:flex-row gap-4">
+                  <div className="flex-1 bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/40 rounded-xl p-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="h-8 w-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                        <span className="text-lg font-bold text-primary">1</span>
+                      </div>
+                      <h4 className="font-bold text-foreground text-lg">Concept Generation</h4>
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">Initial ideation, requirements definition, and preliminary design exploration</p>
                   </div>
-                  <div className="flex items-center justify-center text-primary">→</div>
-                  <div className="flex-1 bg-primary/10 border-2 border-primary rounded-lg p-4">
-                    <h4 className="font-bold text-foreground mb-2">2. Part & System Design</h4>
-                    <p className="text-sm text-muted-foreground">Detailed part design, material selection, and system architecture</p>
+                  <div className="hidden md:flex items-center justify-center text-primary text-2xl px-2">→</div>
+                  <div className="flex-1 bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/40 rounded-xl p-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="h-8 w-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                        <span className="text-lg font-bold text-primary">2</span>
+                      </div>
+                      <h4 className="font-bold text-foreground text-lg">Part & System Design</h4>
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">Detailed mechanical design, material selection, CAD modeling, and system architecture</p>
                   </div>
-                  <div className="flex items-center justify-center text-primary">→</div>
-                  <div className="flex-1 bg-primary/10 border-2 border-primary rounded-lg p-4">
-                    <h4 className="font-bold text-foreground mb-2">3. DFM & DFA</h4>
-                    <p className="text-sm text-muted-foreground">Design for Manufacturing and Assembly optimization with suppliers</p>
+                  <div className="hidden md:flex items-center justify-center text-primary text-2xl px-2">→</div>
+                  <div className="flex-1 bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/40 rounded-xl p-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="h-8 w-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                        <span className="text-lg font-bold text-primary">3</span>
+                      </div>
+                      <h4 className="font-bold text-foreground text-lg">DFM & DFA</h4>
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">Design for Manufacturing and Assembly optimization with suppliers</p>
                   </div>
                 </div>
 
                 {/* Phase 2: Testing */}
-                <div className="bg-accent/10 border-2 border-accent rounded-lg p-6">
-                  <h4 className="font-bold text-foreground mb-4">4. Reliability Testing & Validation</h4>
+                <div className="bg-gradient-to-br from-accent/10 to-accent/5 border-2 border-accent/40 rounded-xl p-6 shadow-lg">
+                  <div className="flex items-center gap-3 mb-5">
+                    <div className="h-8 w-8 rounded-lg bg-accent/20 flex items-center justify-center">
+                      <span className="text-lg font-bold text-accent">4</span>
+                    </div>
+                    <h4 className="font-bold text-foreground text-lg">Reliability Testing & Validation</h4>
+                  </div>
                   
                   {/* Testing Methodologies */}
-                  <div className="mb-4">
+                  <div className="mb-5">
                     <p className="text-sm font-semibold text-foreground mb-3">Testing Methodologies:</p>
                     <div className="grid md:grid-cols-3 gap-3">
-                      <div className="bg-card border border-border rounded p-3">
-                        <p className="text-sm font-semibold text-foreground">HALT</p>
-                        <p className="text-xs text-muted-foreground mt-1">Highly Accelerated Life Testing</p>
+                      <div className="bg-card/80 backdrop-blur-sm border-2 border-accent/20 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                        <p className="text-sm font-bold text-foreground">HALT</p>
+                        <p className="text-xs text-muted-foreground mt-1.5">Highly Accelerated Life Testing</p>
                       </div>
-                      <div className="bg-card border border-border rounded p-3">
-                        <p className="text-sm font-semibold text-foreground">ALT</p>
-                        <p className="text-xs text-muted-foreground mt-1">Accelerated Life Testing</p>
+                      <div className="bg-card/80 backdrop-blur-sm border-2 border-accent/20 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                        <p className="text-sm font-bold text-foreground">ALT</p>
+                        <p className="text-xs text-muted-foreground mt-1.5">Accelerated Life Testing</p>
                       </div>
-                      <div className="bg-card border border-border rounded p-3">
-                        <p className="text-sm font-semibold text-foreground">HASS</p>
-                        <p className="text-xs text-muted-foreground mt-1">Highly Accelerated Stress Screening</p>
+                      <div className="bg-card/80 backdrop-blur-sm border-2 border-accent/20 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                        <p className="text-sm font-bold text-foreground">HASS</p>
+                        <p className="text-xs text-muted-foreground mt-1.5">Highly Accelerated Stress Screening</p>
                       </div>
                     </div>
                   </div>
@@ -132,63 +118,78 @@ export const ProcessTimeline = () => {
                   {/* Test Types */}
                   <div>
                     <p className="text-sm font-semibold text-foreground mb-3">Test Parameters & Validation:</p>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
-                      <div className="bg-card border border-border rounded p-3">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                      <div className="bg-card/80 backdrop-blur-sm border border-accent/20 rounded-lg p-3 hover:shadow-md transition-shadow duration-300">
                         <p className="text-sm font-semibold text-foreground">Thermal Cycling</p>
                         <p className="text-xs text-muted-foreground mt-1">Temperature extremes & transitions</p>
                       </div>
-                      <div className="bg-card border border-border rounded p-3">
+                      <div className="bg-card/80 backdrop-blur-sm border border-accent/20 rounded-lg p-3 hover:shadow-md transition-shadow duration-300">
                         <p className="text-sm font-semibold text-foreground">Vibration Testing</p>
                         <p className="text-xs text-muted-foreground mt-1">Environmental stress simulation</p>
                       </div>
-                      <div className="bg-card border border-border rounded p-3">
+                      <div className="bg-card/80 backdrop-blur-sm border border-accent/20 rounded-lg p-3 hover:shadow-md transition-shadow duration-300">
                         <p className="text-sm font-semibold text-foreground">Structural Analysis</p>
                         <p className="text-xs text-muted-foreground mt-1">Mechanical integrity verification</p>
                       </div>
-                      <div className="bg-card border border-border rounded p-3">
-                        <p className="text-sm font-semibold text-foreground">IP Rating</p>
+                      <div className="bg-card/80 backdrop-blur-sm border border-accent/20 rounded-lg p-3 hover:shadow-md transition-shadow duration-300">
+                        <p className="text-sm font-semibold text-foreground">IP Rating Testing</p>
                         <p className="text-xs text-muted-foreground mt-1">Ingress protection certification</p>
                       </div>
-                      <div className="bg-card border border-border rounded p-3">
-                        <p className="text-sm font-semibold text-foreground">External Labs</p>
+                      <div className="bg-card/80 backdrop-blur-sm border border-accent/20 rounded-lg p-3 hover:shadow-md transition-shadow duration-300">
+                        <p className="text-sm font-semibold text-foreground">External Lab Testing</p>
                         <p className="text-xs text-muted-foreground mt-1">Third-party validation</p>
                       </div>
-                      <div className="bg-card border border-border rounded p-3">
-                        <p className="text-sm font-semibold text-foreground">Safety Standards</p>
-                        <p className="text-xs text-muted-foreground mt-1">Regulatory compliance testing</p>
+                      <div className="bg-card/80 backdrop-blur-sm border border-accent/20 rounded-lg p-3 hover:shadow-md transition-shadow duration-300">
+                        <p className="text-sm font-semibold text-foreground">Safety & Compliance</p>
+                        <p className="text-xs text-muted-foreground mt-1">Regulatory standards testing</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Phase 3: Manufacturing */}
-                <div className="flex flex-col md:flex-row gap-3">
-                  <div className="flex-1 bg-green-500/10 border-2 border-green-500 rounded-lg p-4">
-                    <h4 className="font-bold text-foreground mb-2">5. Manufacturer Partnership</h4>
-                    <p className="text-sm text-muted-foreground">Tooling engineering collaboration and prototype development</p>
+                <div className="flex flex-col md:flex-row gap-4">
+                  <div className="flex-1 bg-gradient-to-br from-emerald-500/10 to-emerald-500/5 border-2 border-emerald-500/40 rounded-xl p-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="h-8 w-8 rounded-lg bg-emerald-500/20 flex items-center justify-center">
+                        <span className="text-lg font-bold text-emerald-600">5</span>
+                      </div>
+                      <h4 className="font-bold text-foreground text-lg">Manufacturer Partnership</h4>
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">Tooling engineering collaboration, prototyping, and production setup</p>
                   </div>
-                  <div className="flex items-center justify-center text-green-500">→</div>
-                  <div className="flex-1 bg-green-500/10 border-2 border-green-500 rounded-lg p-4">
-                    <h4 className="font-bold text-foreground mb-2">6. Production Ramp-Up</h4>
-                    <p className="text-sm text-muted-foreground">Scaling manufacturing capacity and quality control</p>
+                  <div className="hidden md:flex items-center justify-center text-emerald-600 text-2xl px-2">→</div>
+                  <div className="flex-1 bg-gradient-to-br from-emerald-500/10 to-emerald-500/5 border-2 border-emerald-500/40 rounded-xl p-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="h-8 w-8 rounded-lg bg-emerald-500/20 flex items-center justify-center">
+                        <span className="text-lg font-bold text-emerald-600">6</span>
+                      </div>
+                      <h4 className="font-bold text-foreground text-lg">Production Ramp-Up</h4>
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">Scaling manufacturing capacity and quality control systems</p>
                   </div>
                 </div>
 
                 {/* Phase 4: Launch */}
-                <div className="bg-orange-500/10 border-2 border-orange-500 rounded-lg p-6">
-                  <h4 className="font-bold text-foreground mb-4">7. Market Launch</h4>
+                <div className="bg-gradient-to-br from-orange-500/10 to-orange-500/5 border-2 border-orange-500/40 rounded-xl p-6 shadow-lg">
+                  <div className="flex items-center gap-3 mb-5">
+                    <div className="h-8 w-8 rounded-lg bg-orange-500/20 flex items-center justify-center">
+                      <span className="text-lg font-bold text-orange-600">7</span>
+                    </div>
+                    <h4 className="font-bold text-foreground text-lg">Market Launch</h4>
+                  </div>
                   <div className="grid md:grid-cols-3 gap-3">
-                    <div className="bg-card border border-border rounded p-3">
-                      <p className="text-sm font-semibold text-foreground">Logistics Planning</p>
-                      <p className="text-xs text-muted-foreground mt-1">Distribution & supply chain</p>
+                    <div className="bg-card/80 backdrop-blur-sm border-2 border-orange-500/20 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                      <p className="text-sm font-bold text-foreground">Logistics Planning</p>
+                      <p className="text-xs text-muted-foreground mt-1.5">Distribution & supply chain coordination</p>
                     </div>
-                    <div className="bg-card border border-border rounded p-3">
-                      <p className="text-sm font-semibold text-foreground">Marketing Campaign</p>
-                      <p className="text-xs text-muted-foreground mt-1">Product positioning</p>
+                    <div className="bg-card/80 backdrop-blur-sm border-2 border-orange-500/20 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                      <p className="text-sm font-bold text-foreground">Marketing Campaign</p>
+                      <p className="text-xs text-muted-foreground mt-1.5">Product positioning and launch strategy</p>
                     </div>
-                    <div className="bg-card border border-border rounded p-3">
-                      <p className="text-sm font-semibold text-foreground">Mass Production</p>
-                      <p className="text-xs text-muted-foreground mt-1">Full-scale manufacturing</p>
+                    <div className="bg-card/80 backdrop-blur-sm border-2 border-orange-500/20 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                      <p className="text-sm font-bold text-foreground">Mass Production</p>
+                      <p className="text-xs text-muted-foreground mt-1.5">Full-scale manufacturing execution</p>
                     </div>
                   </div>
                 </div>
@@ -197,53 +198,53 @@ export const ProcessTimeline = () => {
           </div>
 
           {/* Cross-Functional Leadership */}
-          <div className="mt-16 space-y-6">
-            <div className="text-center space-y-2">
-              <h3 className="text-2xl font-bold text-foreground">
+          <div className="space-y-6">
+            <div className="text-center space-y-3">
+              <h3 className="text-3xl font-bold text-foreground">
                 Cross-Functional Leadership
               </h3>
-              <p className="text-muted-foreground">
-                Hands-on involvement in every aspect of product development across all teams
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Hands-on involvement across all aspects of product development, collaborating with diverse teams
               </p>
             </div>
             
-            <div className="bg-card p-8 rounded-lg border border-border">
+            <div className="bg-card/50 backdrop-blur-sm p-8 rounded-2xl border-2 border-border/50 shadow-[var(--shadow-card)]">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Industrial Design Team</h4>
-                  <p className="text-sm text-muted-foreground">CMF specifications, aesthetics, and user experience refinement</p>
+                <div className="bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/20 rounded-xl p-5 hover:shadow-lg transition-all duration-300 hover:border-primary/40">
+                  <h4 className="font-bold text-foreground mb-2 text-base">Industrial Design Team</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">CMF specifications, aesthetics, and user experience refinement</p>
                 </div>
-                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Hardware Engineering</h4>
-                  <p className="text-sm text-muted-foreground">Circuit design, component selection, and system integration</p>
+                <div className="bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/20 rounded-xl p-5 hover:shadow-lg transition-all duration-300 hover:border-primary/40">
+                  <h4 className="font-bold text-foreground mb-2 text-base">Hardware Engineering</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">Circuit design, component selection, and system integration</p>
                 </div>
-                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Tooling Engineering</h4>
-                  <p className="text-sm text-muted-foreground">Mold design, manufacturing processes via suppliers</p>
+                <div className="bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/20 rounded-xl p-5 hover:shadow-lg transition-all duration-300 hover:border-primary/40">
+                  <h4 className="font-bold text-foreground mb-2 text-base">Tooling Engineering</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">Mold design, manufacturing processes via suppliers</p>
                 </div>
-                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Manufacturing Partners</h4>
-                  <p className="text-sm text-muted-foreground">DFM/DFA optimization, supplier communication, quality systems</p>
+                <div className="bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/20 rounded-xl p-5 hover:shadow-lg transition-all duration-300 hover:border-primary/40">
+                  <h4 className="font-bold text-foreground mb-2 text-base">Manufacturing Partners</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">DFM/DFA optimization, supplier communication, quality systems</p>
                 </div>
-                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Logistics Team</h4>
-                  <p className="text-sm text-muted-foreground">Supply chain planning, packaging, and distribution strategy</p>
+                <div className="bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/20 rounded-xl p-5 hover:shadow-lg transition-all duration-300 hover:border-primary/40">
+                  <h4 className="font-bold text-foreground mb-2 text-base">Logistics Team</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">Supply chain planning, packaging, and distribution strategy</p>
                 </div>
-                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Marketing Team</h4>
-                  <p className="text-sm text-muted-foreground">Product positioning, technical documentation, launch campaigns</p>
+                <div className="bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/20 rounded-xl p-5 hover:shadow-lg transition-all duration-300 hover:border-primary/40">
+                  <h4 className="font-bold text-foreground mb-2 text-base">Marketing Team</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">Product positioning, technical documentation, launch campaigns</p>
                 </div>
-                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Accounting & Finance</h4>
-                  <p className="text-sm text-muted-foreground">Cost analysis, budgeting, and financial planning</p>
+                <div className="bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/20 rounded-xl p-5 hover:shadow-lg transition-all duration-300 hover:border-primary/40">
+                  <h4 className="font-bold text-foreground mb-2 text-base">Accounting & Finance</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">Cost analysis, budgeting, and financial planning</p>
                 </div>
-                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">External Testing Labs</h4>
-                  <p className="text-sm text-muted-foreground">Third-party validation, certification, compliance testing</p>
+                <div className="bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/20 rounded-xl p-5 hover:shadow-lg transition-all duration-300 hover:border-primary/40">
+                  <h4 className="font-bold text-foreground mb-2 text-base">External Testing Labs</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">Third-party validation, certification, compliance testing</p>
                 </div>
-                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Quality Assurance</h4>
-                  <p className="text-sm text-muted-foreground">Testing protocols, inspection criteria, continuous improvement</p>
+                <div className="bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/20 rounded-xl p-5 hover:shadow-lg transition-all duration-300 hover:border-primary/40">
+                  <h4 className="font-bold text-foreground mb-2 text-base">Quality Assurance</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">Testing protocols, inspection criteria, continuous improvement</p>
                 </div>
               </div>
             </div>
