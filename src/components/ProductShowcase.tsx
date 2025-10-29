@@ -45,6 +45,9 @@ import grinder2 from "@/assets/grinder-2.jpg";
 import grinder3 from "@/assets/grinder-3.jpg";
 import grinder4 from "@/assets/grinder-4.jpg";
 import grinder5 from "@/assets/grinder-5.jpg";
+import theSetImg from "@/assets/the-set.jpg";
+import theSetDetail1 from "@/assets/the-set-detail-1.jpg";
+import theSetDetail2 from "@/assets/the-set-detail-2.jpg";
 
 interface Product {
   title: string;
@@ -298,6 +301,22 @@ const products: Product[] = [
     image: iPurgeXImg,
     images: [iPurgeXImg, iPurgeXDetail1, iPurgeXDetail2, iPurgeXDetail3],
     patents: true
+  },
+  {
+    title: "The SET - Straight Edge Tool",
+    category: "Glass Working Accessories",
+    description: "Perfect accessory for achieving an even finish with sophisticated design and unsurpassed accuracy.",
+    fullDescription: "The SET Straight Edge Tool perfectly aligns atop THE GRINDER, THE GRINDER2, and THE GRINDER3 work surface, enabling glass to easily slide between the grinding bit and the straight edge guide bar. Precisely grind rectangle and square shaped glass to your desired dimensions. Finish your pieces with confidence and accuracy.",
+    features: [
+      "Compatible with all Grinder models",
+      "Easy alignment on work surface",
+      "Precise rectangle and square grinding",
+      "Professional accuracy and finish",
+      "Simple installation and use"
+    ],
+    image: theSetImg,
+    images: [theSetImg, theSetDetail1, theSetDetail2],
+    patents: false
   }
 ];
 

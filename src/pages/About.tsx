@@ -38,7 +38,7 @@ const About = () => {
                     </p>
                   </div>
 
-                  <div className="prose prose-lg max-w-none text-muted-foreground">
+                  <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
                     <p className="leading-relaxed">
                       I am passionate about building reliable products that seamlessly integrate into everyday lives. 
                       With over 10+ patented products developed from concept to mass production, I have extensive 
@@ -46,17 +46,48 @@ const About = () => {
                       and industrial design to material selection, detailed design, reliability testing, prototyping, 
                       and mass production assembly.
                     </p>
-                    <p className="leading-relaxed mt-4">
+                    <p className="leading-relaxed">
                       Beyond mechanical engineering, I hold a Master's degree in Computer Science with a specialization 
                       in Machine Learning. This unique combination allows me to bridge the gap between physical product 
                       development and cutting-edge AI technology. I'm deeply passionate about integrating AI to enhance 
                       user experiences, making products not just functional, but intelligent and adaptive to user needs.
                     </p>
-                    <p className="leading-relaxed mt-4">
-                      My approach combines rigorous engineering principles with innovative AI applications to create 
-                      products that are both reliable and forward-thinking, always keeping the end-user experience 
-                      at the forefront.
-                    </p>
+
+                    <div className="mt-8">
+                      <h3 className="text-2xl font-bold text-foreground mb-4">Education</h3>
+                      <div className="space-y-4">
+                        <div>
+                          <p className="font-semibold text-foreground">M.S. in Computer Science - Machine Learning</p>
+                          <p className="text-sm">Georgia Institute of Technology, Atlanta, GA (2021-2024)</p>
+                          <p className="text-sm mt-1">Coursework: AI for Robotics, Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision</p>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-foreground">M.S. in Mechanical Engineering</p>
+                          <p className="text-sm">University at Buffalo, NY (2015-2017)</p>
+                          <p className="text-sm mt-1">Coursework: Intelligent CAD Interface, CAD Applications, FEA, Manufacturing Automation, Robotic Algorithms</p>
+                        </div>
+                        <div>
+                          <p className="font-semibold text-foreground">B.Tech in Mechanical Engineering</p>
+                          <p className="text-sm">Indian Institute of Technology Madras, Chennai, India (2011-2015)</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mt-8">
+                      <h3 className="text-2xl font-bold text-foreground mb-4">Experience</h3>
+                      <div className="space-y-4">
+                        <div>
+                          <p className="font-semibold text-foreground">Mechanical Engineering Manager</p>
+                          <p className="text-sm">Techniglass Corporation & Aquasol Corporation, Buffalo, NY (Dec 2017 - Present)</p>
+                          <p className="text-sm mt-2 leading-relaxed">
+                            Leading 10+ consumer electronics projects from concept to mass production, managing cross-functional teams 
+                            to deliver innovative products. Implemented ISO-based quality control and DFMA practices, driving ~30% revenue 
+                            growth and 15%+ production efficiency improvements. Expert in injection molding, PCBA integration, and global 
+                            supply chain management.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
