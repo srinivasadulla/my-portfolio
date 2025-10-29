@@ -14,9 +14,11 @@ const Index = () => {
         <ProcessTimeline />
         <Expertise />
         
-        <footer className="py-12 bg-primary text-primary-foreground">
-          <div className="container px-6 text-center">
-            <p className="text-sm">
+        <footer className="relative py-16 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-accent/80" />
+          <div className="absolute inset-0 bg-[image:var(--gradient-mesh)] opacity-30" />
+          <div className="container px-6 text-center relative z-10">
+            <p className="text-sm text-primary-foreground/90 font-medium">
               © {new Date().getFullYear()} Srinivas Reddy Adulla. All rights reserved.
             </p>
           </div>

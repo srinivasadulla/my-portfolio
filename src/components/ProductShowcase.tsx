@@ -332,17 +332,20 @@ export const ProductShowcase = () => {
 
   return (
     <>
-      <section id="projects" className="py-24 bg-gradient-to-b from-background via-muted/20 to-background">
-        <div className="container px-6">
+      <section id="projects" className="relative py-28 overflow-hidden">
+        <div className="absolute inset-0 bg-[image:var(--gradient-mesh)] opacity-40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-muted/30 via-background to-muted/20" />
+        
+        <div className="container px-6 relative z-10">
           <div className="max-w-7xl mx-auto space-y-12">
-            <div className="text-center space-y-4">
-              <div className="inline-block px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
-                <span className="text-sm font-semibold text-accent">Featured Work</span>
+            <div className="text-center space-y-4 animate-fadeIn">
+              <div className="inline-block px-5 py-2 rounded-full bg-gradient-to-r from-accent/10 to-accent/5 border-2 border-accent/20 mb-4 shadow-[var(--shadow-accent)]">
+                <span className="text-sm font-bold bg-gradient-to-r from-accent to-accent-glow bg-clip-text text-transparent">Featured Work</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">
+              <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-br from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
                 Product Portfolio
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 A selection of innovative products developed from initial concept through mass production, 
                 showcasing end-to-end mechanical engineering and project management expertise
               </p>

@@ -36,24 +36,27 @@ const expertiseAreas = [
 
 export const Expertise = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-gradient-to-b from-background to-muted/30">
       <div className="container px-6">
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-4">
+              <span className="text-sm font-semibold text-primary">Skills & Expertise</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
               Core Expertise
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Comprehensive engineering capabilities across all phases of product development
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {expertiseAreas.map((area, index) => (
-              <Card key={index} className="border-border hover:shadow-[var(--shadow-card)] transition-shadow">
-                <CardContent className="p-6 space-y-4">
-                  <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                    <area.icon className="h-6 w-6 text-accent" />
+              <Card key={index} className="group border-2 border-border/50 hover:border-accent/30 hover:shadow-[var(--shadow-elevated)] transition-all duration-300 hover:scale-[1.02] bg-gradient-to-br from-card to-card/50">
+                <CardContent className="p-7 space-y-4">
+                  <div className="h-14 w-14 rounded-xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center group-hover:scale-110 group-hover:shadow-[var(--shadow-accent)] transition-all duration-300">
+                    <area.icon className="h-7 w-7 text-accent" />
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-lg font-bold text-foreground">

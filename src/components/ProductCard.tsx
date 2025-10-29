@@ -39,7 +39,7 @@ export const ProductCard = ({
           </div>
         )}
         {patents && (
-          <Badge className="absolute top-4 right-4 bg-accent text-accent-foreground shadow-lg">
+          <Badge className="absolute top-4 right-4 shadow-[var(--shadow-accent)] hover:scale-110 transition-transform duration-300">
             Patented
           </Badge>
         )}

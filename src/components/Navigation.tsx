@@ -5,12 +5,12 @@ export const Navigation = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-xl border-b border-border/50 shadow-sm">
       <div className="container px-6 py-4">
         <div className="flex items-center justify-between">
           <button 
             onClick={() => navigate("/")}
-            className="text-xl font-bold text-foreground hover:text-accent transition-colors"
+            className="text-xl font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent hover:from-primary hover:to-accent transition-all duration-300"
           >
             Srinivas Reddy Adulla
           </button>
