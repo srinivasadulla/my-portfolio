@@ -49,6 +49,9 @@ import grinder2 from "@/assets/grinder-2.jpg";
 import grinder3 from "@/assets/grinder-3.jpg";
 import grinder4 from "@/assets/grinder-4.jpg";
 import grinder5 from "@/assets/grinder-5.jpg";
+import grinder6 from "@/assets/grinder-6.jpg";
+import grinder7 from "@/assets/grinder-7.jpg";
+import grinder8 from "@/assets/grinder-8.webp";
 import theSetImg from "@/assets/the-set.jpg";
 import theSetDetail1 from "@/assets/the-set-detail-1.jpg";
 import theSetDetail2 from "@/assets/the-set-detail-2.jpg";
@@ -119,7 +122,7 @@ const products: Product[] = [
       "Designed, Engineered & Assembled in USA"
     ],
     image: grinder1,
-    images: [grinder1, grinder2, grinder3, grinder4, grinder5],
+    images: [grinder1, grinder2, grinder3, grinder4, grinder5, grinder6, grinder7, grinder8],
     patents: true
   },
   {
