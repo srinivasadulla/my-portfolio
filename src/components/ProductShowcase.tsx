@@ -40,6 +40,11 @@ import grinder3Detail2 from "@/assets/grinder3-detail-2.jpg";
 import dustFilterImg from "@/assets/dust-filter.jpg";
 import dustFilterDetail1 from "@/assets/dust-filter-detail-1.jpg";
 import dustFilterDetail2 from "@/assets/dust-filter-detail-2.jpg";
+import grinder1 from "@/assets/grinder-1.jpg";
+import grinder2 from "@/assets/grinder-2.jpg";
+import grinder3 from "@/assets/grinder-3.jpg";
+import grinder4 from "@/assets/grinder-4.jpg";
+import grinder5 from "@/assets/grinder-5.jpg";
 
 interface Product {
   title: string;
@@ -55,37 +60,60 @@ interface Product {
 
 const products: Product[] = [
   {
-    title: "The Foiler",
-    category: "Glass Working Tools",
-    description: "Revolutionary handheld foiling tool that simplifies copper foil application for stained glass.",
-    fullDescription: "Revolutionary handheld foiling tool that simplifies copper foil application for stained glass. Features interchangeable tips, built-in blade, and integrated crimper/burnisher. Designed to make foiling faster, easier, and more consistent for artists of all skill levels. Available in three vibrant colors to match your workshop style.",
+    title: "POM Series - Precise Oxygen Monitors",
+    category: "Oxygen Monitoring",
+    description: "Professional oxygen monitors available in two variants: POM-100B (100PPM) for general welding and POM-5B (5PPM) for ultra-precision applications.",
+    fullDescription: "The POM Series offers two precision oxygen monitors designed for welding applications. The POM-100B monitors down to .01% (100PPM), ideal for general welding applications to reduce oxidation. The POM-5B provides ultra-low oxygen detection to 5PPM, critical for aerospace and medical device welding. Both feature extended battery life of 25-30 hours, smart Bluetooth connectivity with the POMConnect app for real-time monitoring and data logging, and expected sensor life exceeding 3 years. Features include a large 2.8\" LCD color display, dust and water resistant construction, and comprehensive kit with carrying case and accessories.",
     features: [
-      "Three interchangeable tip sizes (3/16\", 7/32\", 1/4\")",
-      "Ambidextrous ergonomic design",
-      "Integrated cutting blade and crimper",
-      "EZ-View window for foil monitoring",
-      "Available in blue, orange, and green color variants"
+      "Two variants: POM-100B (100PPM) and POM-5B (5PPM)",
+      "Extended battery life: 25-30 hours",
+      "Smart Bluetooth with POMConnect app",
+      "Long sensor life > 3 years with 1-year warranty",
+      "2.8\" LCD color display",
+      "Multi-language support"
     ],
-    image: foiler1,
-    images: [foiler1, foiler2, foiler3, foiler4],
+    specifications: [
+      "POM-100B Range: 0.01% to 25% oxygen (100PPM minimum)",
+      "POM-5B Range: 5PPM to 25% oxygen (ultra-precision)",
+      "Battery life: 25-30 hours continuous operation",
+      "Sensor life: > 3 years expected lifespan",
+      "Display: 2.8\" LCD color screen with intuitive interface",
+      "Connectivity: Bluetooth-enabled with POMConnect mobile app",
+      "Languages: English, German, Spanish, Portuguese, Japanese",
+      "Construction: Dust and water resistant, impact-resistant polycarbonate",
+      "Warranty: One year on unit & sensor",
+      "Kit includes: Monitor with sensor, carrying case, extension tubing, probe, charger, USB cable"
+    ],
+    image: pomBothVariants,
+    images: [pomBothVariants, pom100bDevice, pom100bDustFilter, pom100bMobileHome, pom100bMobileChart, pom5bDustFilter, pom5bMobileChart],
     patents: true
   },
   {
-    title: "Foiler Bench Clamp",
-    category: "Glass Working Accessories",
-    description: "Essential bench-mounting accessory for The Foiler, providing stable hands-free operation.",
-    fullDescription: "The Foiler Bench Clamp is the perfect companion to The Foiler, allowing you to mount your foiler securely to any workbench or table edge. This innovative clamp system provides stable, hands-free storage and easy access when you need it. The heavy-duty construction ensures your foiler stays in place while the adjustable clamp fits tables up to 2 inches thick.",
+    title: "The Grinder",
+    category: "Glass Working Tools",
+    description: "State-of-the-art breakthrough technology glass grinder with powerful motor, spacious work surface, and advanced features.",
+    fullDescription: "An exceptional highly engineered and appointed precision instrument for the professional artist and equally popular with the discriminating hobbyist looking for comprehensive and advanced features. THE GRINDER's super quiet, powerful motor boasts a torque of 57 oz/in (0.4 N/m) at 4500 RPM, surpassing any model available. Vibration dampening technology absorbs shock and provides added stability to maintain an extremely quiet whisper operation for the most pleasurable grinding.",
     features: [
-      "Secure bench mounting system",
-      "Fits table edges up to 2\" thick",
-      "Quick-release mechanism for easy removal",
-      "Durable powder-coated construction",
-      "Protects foiler when not in use",
-      "Compact footprint saves workspace"
+      "Powerful motor: 57 oz/in torque at 4500 RPM",
+      "Spacious 12\" x 16\" (30x40cm) work surface",
+      "LumiShield® LED illuminated eye shield",
+      "The Guard® splash curtain system",
+      "Removable water tray with lift-out design",
+      "Water Wave Stabilizer & Support System",
+      "EZ-View Windows & Lift Grid",
+      "Universal 110-220 VAC compatibility"
     ],
-    image: benchClamp1,
-    images: [benchClamp1, benchClamp2, benchClamp3, benchClamp4],
-    patents: false
+    specifications: [
+      "Work Surface: 12\" x 16\" (30x40cm)",
+      "Motor: 57 oz/in torque at 4500 RPM",
+      "Power: 110-220 VAC Universal Compatibility",
+      "Cord: 5 ft. (1.5m) removable 3-prong cord",
+      "Vibration Dampening Technology",
+      "Designed, Engineered & Assembled in USA"
+    ],
+    image: grinder1,
+    images: [grinder1, grinder2, grinder3, grinder4, grinder5],
+    patents: true
   },
   {
     title: "The Grinder 2",
@@ -134,6 +162,67 @@ const products: Product[] = [
     patents: true
   },
   {
+    title: "Glass Cutter",
+    category: "Glass Working Tools",
+    description: "Precision glass cutting tool with ergonomic design.",
+    fullDescription: "Professional-grade glass cutting tool engineered for precision and comfort. Features an ergonomic handle design that reduces hand fatigue during extended cutting sessions.",
+    features: [
+      "Ergonomic handle design",
+      "Precision cutting wheel",
+      "Comfortable grip for extended use"
+    ],
+    image: glassCutterImg,
+    images: [glassCutterImg, glassCutterDetail1],
+    patents: false
+  },
+  {
+    title: "The Foiler",
+    category: "Glass Working Tools",
+    description: "Revolutionary handheld foiling tool that simplifies copper foil application for stained glass.",
+    fullDescription: "Revolutionary handheld foiling tool that simplifies copper foil application for stained glass. Features interchangeable tips, built-in blade, and integrated crimper/burnisher. Designed to make foiling faster, easier, and more consistent for artists of all skill levels. Available in three vibrant colors to match your workshop style.",
+    features: [
+      "Three interchangeable tip sizes (3/16\", 7/32\", 1/4\")",
+      "Ambidextrous ergonomic design",
+      "Integrated cutting blade and crimper",
+      "EZ-View window for foil monitoring",
+      "Available in blue, orange, and green color variants"
+    ],
+    image: foiler1,
+    images: [foiler1, foiler2, foiler3, foiler4],
+    patents: true
+  },
+  {
+    title: "Foiler Bench Clamp",
+    category: "Glass Working Accessories",
+    description: "Essential bench-mounting accessory for The Foiler, providing stable hands-free operation.",
+    fullDescription: "The Foiler Bench Clamp is the perfect companion to The Foiler, allowing you to mount your foiler securely to any workbench or table edge. This innovative clamp system provides stable, hands-free storage and easy access when you need it. The heavy-duty construction ensures your foiler stays in place while the adjustable clamp fits tables up to 2 inches thick.",
+    features: [
+      "Secure bench mounting system",
+      "Fits table edges up to 2\" thick",
+      "Quick-release mechanism for easy removal",
+      "Durable powder-coated construction",
+      "Protects foiler when not in use",
+      "Compact footprint saves workspace"
+    ],
+    image: benchClamp1,
+    images: [benchClamp1, benchClamp2, benchClamp3, benchClamp4],
+    patents: false
+  },
+  {
+    title: "Running Pliers",
+    category: "Glass Working Tools",
+    description: "Professional running pliers for controlled glass breaking.",
+    fullDescription: "Essential tool for breaking scored glass lines with precision and control. Designed with optimal leverage and cushioned handles for comfortable, consistent results.",
+    features: [
+      "Precision breaking control",
+      "Comfortable cushioned handles",
+      "Optimal leverage design"
+    ],
+    image: runningPliersImg,
+    images: [runningPliersImg, runningPliersDetail1],
+    patents: false
+  },
+  {
     title: "Quick-Fit Bit System",
     category: "Glass Working Accessories",
     description: "Shock-absorbing grinding bit system with quick-change capability.",
@@ -149,19 +238,26 @@ const products: Product[] = [
     patents: true
   },
   {
-    title: "I-Purge X",
+    title: "Pro-Ox Monitor",
     category: "Welding Equipment",
-    description: "Modular inflatable bladder system for pipe welding purge applications.",
-    fullDescription: "Modular inflatable bladder system for pipe welding purge applications. Expandable design fits multiple pipe sizes with interchangeable modules and high-heat resistant components. Engineered to provide superior purge quality while reducing setup time.",
+    description: "Advanced oxygen monitoring solution with color display and industrial-grade construction.",
+    fullDescription: "The Pro-Ox Monitor represents the next generation of oxygen monitoring technology for professional welding operations. Featuring a large, high-contrast color display, IP65 waterproof construction, and removable in-line filters, this device delivers reliable performance in the harshest industrial environments. Designed with input from professional welders for maximum usability and durability.",
     features: [
-      "Modular system (8\"-12\" range)",
-      "High-heat harness (up to 1200°F)",
-      "Tri-flow inner tubing system",
-      "Patent-pending inert gas diffuser"
+      "IP65 waterproof rating",
+      "High-contrast color display",
+      "Removable cleanable puck filters",
+      "Glove-compatible controls",
+      "Long battery life"
     ],
-    image: iPurgeXImg,
-    images: [iPurgeXImg, iPurgeXDetail1, iPurgeXDetail2, iPurgeXDetail3],
-    patents: true
+    specifications: [
+      "IP65 Waterproof Construction",
+      "Color LCD Display",
+      "In-line Filter System",
+      "Extended Battery Operation"
+    ],
+    image: proOxMonitorImg,
+    images: [proOxMonitorImg, proOxDetail1, proOxDetail2, proOxDetail3],
+    patents: false
   },
   {
     title: "External Dust Filter",
@@ -189,55 +285,19 @@ const products: Product[] = [
     patents: false
   },
   {
-    title: "POM Series - Precise Oxygen Monitors",
-    category: "Oxygen Monitoring",
-    description: "Professional oxygen monitors available in two variants: POM-100B (100PPM) for general welding and POM-5B (5PPM) for ultra-precision applications.",
-    fullDescription: "The POM Series offers two precision oxygen monitors designed for welding applications. The POM-100B monitors down to .01% (100PPM), ideal for general welding applications to reduce oxidation. The POM-5B provides ultra-low oxygen detection to 5PPM, critical for aerospace and medical device welding. Both feature extended battery life of 25-30 hours, smart Bluetooth connectivity with the POMConnect app for real-time monitoring and data logging, and expected sensor life exceeding 3 years. Features include a large 2.8\" LCD color display, dust and water resistant construction, and comprehensive kit with carrying case and accessories.",
-    features: [
-      "Two variants: POM-100B (100PPM) and POM-5B (5PPM)",
-      "Extended battery life: 25-30 hours",
-      "Smart Bluetooth with POMConnect app",
-      "Long sensor life > 3 years with 1-year warranty",
-      "2.8\" LCD color display",
-      "Multi-language support"
-    ],
-    specifications: [
-      "POM-100B Range: 0.01% to 25% oxygen (100PPM minimum)",
-      "POM-5B Range: 5PPM to 25% oxygen (ultra-precision)",
-      "Battery life: 25-30 hours continuous operation",
-      "Sensor life: > 3 years expected lifespan",
-      "Display: 2.8\" LCD color screen with intuitive interface",
-      "Connectivity: Bluetooth-enabled with POMConnect mobile app",
-      "Languages: English, German, Spanish, Portuguese, Japanese",
-      "Construction: Dust and water resistant, impact-resistant polycarbonate",
-      "Warranty: One year on unit & sensor",
-      "Kit includes: Monitor with sensor, carrying case, extension tubing, probe, charger, USB cable"
-    ],
-    image: pomBothVariants,
-    images: [pomBothVariants, pom100bDevice, pom100bDustFilter, pom100bMobileHome, pom100bMobileChart, pom5bDustFilter, pom5bMobileChart],
-    patents: true
-  },
-  {
-    title: "Pro-Ox Monitor",
+    title: "I-Purge X",
     category: "Welding Equipment",
-    description: "Advanced oxygen monitoring solution with color display and industrial-grade construction.",
-    fullDescription: "The Pro-Ox Monitor represents the next generation of oxygen monitoring technology for professional welding operations. Featuring a large, high-contrast color display, IP65 waterproof construction, and removable in-line filters, this device delivers reliable performance in the harshest industrial environments. Designed with input from professional welders for maximum usability and durability.",
+    description: "Modular inflatable bladder system for pipe welding purge applications.",
+    fullDescription: "Modular inflatable bladder system for pipe welding purge applications. Expandable design fits multiple pipe sizes with interchangeable modules and high-heat resistant components. Engineered to provide superior purge quality while reducing setup time.",
     features: [
-      "IP65 waterproof rating",
-      "High-contrast color display",
-      "Removable cleanable puck filters",
-      "Glove-compatible controls",
-      "Long battery life"
+      "Modular system (8\"-12\" range)",
+      "High-heat harness (up to 1200°F)",
+      "Tri-flow inner tubing system",
+      "Patent-pending inert gas diffuser"
     ],
-    specifications: [
-      "IP65 Waterproof Construction",
-      "Color LCD Display",
-      "In-line Filter System",
-      "Extended Battery Operation"
-    ],
-    image: proOxMonitorImg,
-    images: [proOxMonitorImg, proOxDetail1, proOxDetail2, proOxDetail3],
-    patents: false
+    image: iPurgeXImg,
+    images: [iPurgeXImg, iPurgeXDetail1, iPurgeXDetail2, iPurgeXDetail3],
+    patents: true
   }
 ];
 
