@@ -118,8 +118,8 @@ const products: Product[] = [
       "Vibration Dampening Technology",
       "Designed, Engineered & Assembled in USA"
     ],
-    image: grinder2,
-    images: [grinder2, grinder1, grinder3, grinder4, grinder5],
+    image: grinder1,
+    images: [grinder1, grinder2, grinder3, grinder4, grinder5],
     patents: true
   },
   {
