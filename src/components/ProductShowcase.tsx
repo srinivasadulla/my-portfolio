@@ -35,6 +35,10 @@ import proOxDetail3 from "@/assets/pro-ox-detail-3.jpg";
 import grinder2Detail1 from "@/assets/grinder2-detail-1.jpg";
 import grinder2Detail2 from "@/assets/grinder2-detail-2.jpg";
 import grinder2Detail3 from "@/assets/grinder2-detail-3.jpg";
+import grinder2New1 from "@/assets/grinder2-new-1.png";
+import grinder2New2 from "@/assets/grinder2-new-2.png";
+import grinder2New3 from "@/assets/grinder2-new-3.png";
+import grinder2New4 from "@/assets/grinder2-new-4.png";
 import grinder3Detail1 from "@/assets/grinder3-detail-1.jpg";
 import grinder3Detail2 from "@/assets/grinder3-detail-2.jpg";
 import dustFilterImg from "@/assets/dust-filter.jpg";
@@ -137,8 +141,8 @@ const products: Product[] = [
       "Vibration Control Technology",
       "5 Year Limited Warranty"
     ],
-    image: grinder2Detail1,
-    images: [grinder2Detail1, grinder2Img, grinder2Detail2, grinder2Detail3],
+    image: grinder2New1,
+    images: [grinder2New1, grinder2New2, grinder2New3, grinder2New4],
     patents: true
   },
   {
