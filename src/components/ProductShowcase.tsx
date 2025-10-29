@@ -114,8 +114,8 @@ const products: Product[] = [
       "Vibration Dampening Technology",
       "Designed, Engineered & Assembled in USA"
     ],
-    image: grinder1,
-    images: [grinder1, grinder2, grinder3, grinder4, grinder5],
+    image: grinder2,
+    images: [grinder2, grinder1, grinder3, grinder4, grinder5],
     patents: true
   },
   {
@@ -137,8 +137,8 @@ const products: Product[] = [
       "Vibration Control Technology",
       "5 Year Limited Warranty"
     ],
-    image: grinder2Img,
-    images: [grinder2Img, grinder2Detail1, grinder2Detail2, grinder2Detail3],
+    image: grinder2Detail1,
+    images: [grinder2Detail1, grinder2Img, grinder2Detail2, grinder2Detail3],
     patents: true
   },
   {
@@ -160,8 +160,8 @@ const products: Product[] = [
       "Aqua Flow System included",
       "5 Year Limited Warranty"
     ],
-    image: grinder3Img,
-    images: [grinder3Img, grinder3Detail1, grinder3Detail2],
+    image: grinder3Detail1,
+    images: [grinder3Detail1, grinder3Img, grinder3Detail2],
     patents: true
   },
   {
