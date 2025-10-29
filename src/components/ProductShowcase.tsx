@@ -340,7 +340,7 @@ export const ProductShowcase = () => {
           <div className="max-w-7xl mx-auto space-y-12">
             <div className="text-center space-y-4 animate-fadeIn">
               <div className="inline-block px-5 py-2 rounded-full bg-gradient-to-r from-accent/10 to-accent/5 border-2 border-accent/20 mb-4 shadow-[var(--shadow-accent)]">
-                <span className="text-sm font-bold bg-gradient-to-r from-accent to-accent-glow bg-clip-text text-transparent">Featured Work</span>
+                <span className="text-sm font-bold text-accent">Featured Work</span>
               </div>
               <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-br from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
                 Product Portfolio

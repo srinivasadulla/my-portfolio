@@ -37,13 +37,13 @@ export const Hero = () => {
               
               <div className="flex flex-wrap gap-3 pt-4">
                 <div className="px-5 py-2.5 bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 rounded-xl backdrop-blur-sm hover:shadow-[var(--shadow-card)] transition-all duration-300 hover:scale-105">
-                  <p className="text-sm font-semibold bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">10+ Patents</p>
+                  <p className="text-sm font-semibold text-primary">10+ Patented Products</p>
                 </div>
                 <div className="px-5 py-2.5 bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 rounded-xl backdrop-blur-sm hover:shadow-[var(--shadow-card)] transition-all duration-300 hover:scale-105">
-                  <p className="text-sm font-semibold bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">Full Lifecycle</p>
+                  <p className="text-sm font-semibold text-primary">Full Lifecycle</p>
                 </div>
                 <div className="px-5 py-2.5 bg-gradient-to-br from-accent/10 to-accent/5 border border-accent/20 rounded-xl backdrop-blur-sm hover:shadow-[var(--shadow-accent)] transition-all duration-300 hover:scale-105">
-                  <p className="text-sm font-semibold bg-gradient-to-r from-accent to-accent-glow bg-clip-text text-transparent">ML Enthusiast</p>
+                  <p className="text-sm font-semibold text-accent">ML Enthusiast</p>
                 </div>
               </div>
               
